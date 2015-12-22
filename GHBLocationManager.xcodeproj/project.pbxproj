@@ -15,6 +15,7 @@
 		ECC36D0C1C291BDB00C0A162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC36D0A1C291BDB00C0A162 /* LaunchScreen.storyboard */; };
 		ECC36D171C291BDC00C0A162 /* GHBLocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC36D161C291BDC00C0A162 /* GHBLocationManagerTests.m */; };
 		ECC36D221C291BDC00C0A162 /* GHBLocationManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC36D211C291BDC00C0A162 /* GHBLocationManagerUITests.m */; };
+		ECC36D321C291C6000C0A162 /* CLLocation+GHBLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC36D311C291C6000C0A162 /* CLLocation+GHBLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		ECC36D1D1C291BDC00C0A162 /* GHBLocationManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHBLocationManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC36D211C291BDC00C0A162 /* GHBLocationManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHBLocationManagerUITests.m; sourceTree = "<group>"; };
 		ECC36D231C291BDC00C0A162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC36D301C291C6000C0A162 /* CLLocation+GHBLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+GHBLocation.h"; sourceTree = "<group>"; };
+		ECC36D311C291C6000C0A162 /* CLLocation+GHBLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+GHBLocation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		ECC36CFB1C291BDB00C0A162 /* GHBLocationManager */ = {
 			isa = PBXGroup;
 			children = (
+				ECC36D2F1C291C1C00C0A162 /* GHBLocation */,
 				ECC36CFF1C291BDB00C0A162 /* AppDelegate.h */,
 				ECC36D001C291BDB00C0A162 /* AppDelegate.m */,
 				ECC36D021C291BDB00C0A162 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				ECC36D231C291BDC00C0A162 /* Info.plist */,
 			);
 			path = GHBLocationManagerUITests;
+			sourceTree = "<group>";
+		};
+		ECC36D2F1C291C1C00C0A162 /* GHBLocation */ = {
+			isa = PBXGroup;
+			children = (
+				ECC36D301C291C6000C0A162 /* CLLocation+GHBLocation.h */,
+				ECC36D311C291C6000C0A162 /* CLLocation+GHBLocation.m */,
+			);
+			path = GHBLocation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC36D321C291C6000C0A162 /* CLLocation+GHBLocation.m in Sources */,
 				ECC36D041C291BDB00C0A162 /* ViewController.m in Sources */,
 				ECC36D011C291BDB00C0A162 /* AppDelegate.m in Sources */,
 				ECC36CFE1C291BDB00C0A162 /* main.m in Sources */,
