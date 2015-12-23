@@ -80,17 +80,15 @@ const double a = 6378245.0;
 const double ee = 0.00669342162296594323;
 
 bool transform_sino_out_china(double lat, double lon){
-    if (lon < 72.004 || lon > 137.8347){
+    if (lon < 72.004 || lon > 137.8347)
         return true;
-    }
-    if (lat < 0.8293 || lat > 55.8271) {
+    if (lat < 0.8293 || lat > 55.8271)
         return true;
-    }
     return false;
 }
 
 double transform_earth_from_mars_lat(double x, double y){
-    double ret = -100.0 + 0.2 * x + 0.3 * y + 0.2 * y * y + 0.1 * x * y + 0.2 * sqrt(abs((int)x));
+    double ret = -100.0 + 2.0 * x + 3.0 * y + 0.2 * y * y + 0.1 * x * y + 0.2 * sqrt(abs((int)x));
     ret += (20.0 * sin(6.0 * x * M_PI) + 20.0 * sin(2.0 * x * M_PI)) * 2.0 /3.0;
     ret += (20.0 * sin(y * M_PI) + 40.0 * sin(y / 3.0 * M_PI)) * 2.0 / 3.0;
     ret += (160.0 * sin(y / 12.0 * M_PI) + 320 * sin(y * M_PI / 30.0)) * 2.0 / 3.0;
