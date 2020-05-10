@@ -14,7 +14,7 @@
 
 @implementation AppDelegate
 
-- (void)application{
+- (void)applicatio1{
     
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
